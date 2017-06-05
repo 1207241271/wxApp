@@ -78,11 +78,67 @@ const getDeviceFence = (params) =>{
 }
 
 const setBatteryType = (params) =>{
-	package
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.SET_BatteryType,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setRecordStart = (params) =>{
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.START_Record,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setRecordEnd = (params) =>{
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.END_Record,params.param);
+	wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setElectronicSwitch = (params) =>{
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.SET_ElectronicSwitch,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const getElectronicSwitch = (params) =>{
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.GET_ElectronicSwitch,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const getGPSSignal = (params) =>{
+	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.GET_GPSSignal,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
 }
 
 const getGSMSignal = (params) =>{
 	params.data = deviceParam.formateParams(params.IMEI,DeviceCmd.GET_GSMSignal,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setRelevance = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.SET_Relevance,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const getRelevance = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.GET_FenceSwitch,params.param);
+	wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setMotorRelevance = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.SET_MotorRelevance,params.param);
+	wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const getMotorRelevance = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.GET_MotorRelevance,params.param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setBackWheelLock = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.SET_BackWheelLock,params,param);
+    wxRequest(params,`${apiURL}${deviceURLAppend}`);
+}
+
+const setBackseatLock = (params) =>{
+	params.data = deviceParam.formateParams(params.param,DeviceCmd.setBackseatLock,params.param);
     wxRequest(params,`${apiURL}${deviceURLAppend}`);
 }
 
@@ -101,8 +157,22 @@ const getWeChartBindIMEI = (params)=>{
 }
 module.exports = {
 	getDeviceStatus,
+	getGPS,
 	setDeviceFence,
+	getDeviceFence,
+	setBatteryType,
+	setRecordStart,
+	setRecordEnd,
+	setElectronicSwitch,
+	getElectronicSwitch,
+	getGPSSignal,
 	getGSMSignal,
+	setRelevance,
+	getRelevance,
+	setMotorRelevance,
+	getMotorRelevance,
+	setBackWheelLock,
+	setBackseatLock,
 	getItinerary,
 	setWeChatBind,
 	getWeChartBindIMEI
