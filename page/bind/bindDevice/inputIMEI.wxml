@@ -1,0 +1,6 @@
+<view>
+    <form bindsubmit="formSubmit">
+        <input type="number" confirm-type="done" name="IMEI"></input>
+        <button class="button" formType="submit" >确认</button>
+    </form>
+</view>

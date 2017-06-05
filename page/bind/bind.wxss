@@ -1,0 +1,30 @@
+.view{
+	background-color: lightgray;
+	width: 100%;
+	height: 100%;
+}
+.view-label{
+	height:200rpx;
+	display: flex
+}
+
+.label{
+	height: 40rpx;
+	margin-left: 30rpx;
+	margin-top: 150rpx;
+}
+
+.view-input{
+	height: 80rpx;
+}
+
+.input{
+	margin: auto;
+	width: 60%;
+	background-color: white;
+}
+
+.button{
+	width: 70%;
+	text-align: center
+}

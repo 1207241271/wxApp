@@ -1,0 +1,13 @@
+<view class="view">
+	<view class="view-label">
+		<label class="label">请输入您的设备号</label>
+	</view>
+	<form bindsubmit="formSubmit">
+	<view class="view-input">
+		<input style="border:1rpx,solid" class="input" type="number" confirm-type="done" bindconfirm="finishInput" name="IMEI"></input>
+	</view>
+	<view>
+		<button class="button" formType="submit" >确认</button>
+	</view>
+	</form>
+</view>

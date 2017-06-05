@@ -1,0 +1,4 @@
+<view>
+    <button bindtap="gotoScanIMEI">扫码绑定</button>
+    <button bindtap="gotoInputIMEI">输入序列号</button>
+</view>

@@ -1,0 +1,5 @@
+<view>
+	<button bindtap="gotoBind">直接进入</button>
+    <button bindtap="gotoSetPhone">关联新手机</button>
+    <button bindtap="gotoHaveId">已有账号</button>
+</view>

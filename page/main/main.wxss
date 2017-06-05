@@ -1,0 +1,80 @@
+.map-mapView{
+    width: 750rpx;
+    height: 690rpx 
+}
+.map-locationTitle{
+  padding-left: 30rpx;
+  background-color: white,
+}
+
+.status-background{
+  width: 100%;
+  display: flex;
+  height: 175rpx
+}
+.status-numInfo-box{
+  width: 20%;
+  height: 175rpx;
+  display: flex
+}
+.status-numInfo-unitBox{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 32rpx;
+  width: 75rpx;
+  height: 60rpx
+}
+.status-numInfo-num{
+  font-size: 65rpx;
+}
+.status-numInfo-unit{
+  margin-top: 10rpx
+}
+.status-numInfo-title{
+  margin-left: 16rpx;
+  margin-top: 12rpx;
+  font-size: 30rpx
+}
+.status-imageInfo-box{
+  width: 20%;
+  height: 175rpx;
+  display: flex
+}
+.status-imageInfo-image{
+  width: 60rpx;
+  height: 60rpx;
+  padding: 35rpx 10rpx 0 50rpx;
+}
+.status-imageInfo-title{
+  text-align: center;
+  font-size: 30rpx
+}
+
+
+.interaction-box{
+  width: 100%;
+  height: 190rpx;
+  display: flex;
+  background-color: white
+}
+
+.interaction-button-box{
+  width: 33%;
+  height: 100;
+  display: flex
+}
+.interaction-button-image{
+  width: 70rpx;
+  height: 70rpx;
+  padding: 35rpx 90rpx 0 90rpx;
+}
+.interaction-button-title{
+  font-size: 30rpx;
+  text-align: center
+}
+.interaction-box-line{
+  width: 2rpx;
+  height: 175rpx;
+  margin-top: 10rpx;
+  background-color: black
+}

@@ -1,0 +1,22 @@
+<view class="view">
+	<view class="view-label">
+		<label class="label">请输入您的手机号</label>
+	</view>
+	<form bindsubmit="PhoneFormSubmit">
+	<view class="view-input">
+		<input style="border:1rpx,solid" class="input" type="number" confirm-type="done" bindconfirm="finishInput" name="phoneNum"></input>
+	</view>
+	<view>
+		<button class="button" formType="submit" >确认</button>
+	</view>
+	</form>
+
+    <form bindsubmit="VerifyFormSubmit">
+	<view class="view-input">
+		<input style="border:1rpx,solid" class="input" type="number" confirm-type="done" bindconfirm="finishInput" name="verifyNum"></input>
+	</view>
+	<view>
+		<button class="button" formType="submit" >确认</button>
+	</view>
+	</form>
+</view>
